@@ -32,12 +32,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/dummykernel:kernel
 
-# Override Default Properties
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.adb.secure=0 \
+# USB
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=manufacture,adb,mtp \
+    ro.sys.usb.storage.type=mtp,adb \
+    sys.usb.configfs=1 \
+    sys.usb.controller=ff100000.dwc3 \
     ro.secure=0 \
-    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
     ro.allow.mock.location=0 \
+    service.adb.root=1 \
     ro.debuggable=1
 
 # Display
