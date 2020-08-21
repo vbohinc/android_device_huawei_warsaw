@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy the Kernel
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/dummykernel:kernel
+    $(DEVICE_PATH)/prebuilt/dummy_kernel:kernel
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
