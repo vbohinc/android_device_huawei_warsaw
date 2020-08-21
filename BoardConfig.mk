@@ -54,6 +54,9 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 # Default Recovery Variant
 RECOVERY_VARIANT := twrp
 
+# Recovery Partition Table
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+
 # Brightness/Battery Paths
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd_backlight0/brightness
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
