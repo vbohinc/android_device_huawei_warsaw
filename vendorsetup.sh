@@ -1,0 +1,2 @@
+add_lunch_combo omni_warsaw-eng
+add_lunch_combo omni_warsaw-userdebug
